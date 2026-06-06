@@ -1,0 +1,4 @@
+-- Ejecutar DESPUES de 02_datos.sql para establecer contrasenas reales
+UPDATE usuario SET password_hash='scrypt:32768:8:1$FV4c3mIK1YbTDLr3$4e2b5a682ab1330a47bf90d76cce9c43be7a4af82394a9112e2c0308f412123bb8bfd7fa3532617c9bd4d3d081dc46abaea5f10512518a57683c3437edc658b4' WHERE correo='admin@pilandina.bo';
+UPDATE usuario SET password_hash='scrypt:32768:8:1$WeZMhnNKTkLwXvMq$a706204d51f1b5d859e092c152a2e48d1c8f59746f7e2aa62e599188b5817d37913beebcb4c28350d64d04bd0ce2c1ed8170172db15f36c33f4de5b0f76a22b7' WHERE correo='gerente@pilandina.bo';
+UPDATE usuario SET password_hash='scrypt:32768:8:1$x4UI5DiLH7gRIJQe$061eb69b681627d3329b00d7b111ceee5172ce13fc52fe484c0380ab9749a16e7018e8e90d95c07f933069633e69fd49b39fcebfebdb144ce6c087f9887ac7f5' WHERE correo='distri@pilandina.bo';
